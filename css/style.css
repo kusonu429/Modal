@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    text-align: center;
+}
+
+body .mein-section{
+    width: 100%;
+    max-width: 1200px;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+body .mein-section  .btn{
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    border: 0;
+    background-color: yellowgreen;
+    color:#fff;
+    border-radius: 4px;
+}
+
+
+body .mein-section .modal-section{
+    background-color: yellowgreen;
+    padding: 50px;
+    color: #fff;
+    transition:all 0.3s ease; 
+    position: relative;
+   
+}
+
+.mein-section .modal-section .icon{
+    position: absolute;
+    right:15px; 
+    top: 10px;
+}
+
+ .mein-section .modal-section .line{
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+ .mein-section .modal-section .line-1 {
+    transform: translateY(12px) rotate(45deg);
+} 
+
+.mein-section .modal-section .line-2 {
+    transform: translateY(5px) rotate(-45deg);
+} 
+
+ .mein-section .modal-section p{
+    font-size: 3rem; 
+     
+}
+
+.mein-section .active{  
+    display: none;
+} 
+
+.mein-section .modal-show{
+    display: block ; 
+    transition:all 0.3s ease; 
+}
